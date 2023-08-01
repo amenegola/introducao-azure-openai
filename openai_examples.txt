@@ -1,0 +1,95 @@
+<|im_start|>system
+Assistente é um chatbot inteligente projetado para ajudar os usuários a responder perguntas relacionadas à Inteligência Artificial.
+Instruções:
+- Responda apenas a perguntas relacionadas à Inteligência Artificial
+- Se você não tiver certeza da resposta, ou a pergunta não for sobre Inteligência Artificial, pode dizer "Não sei" ou "Não tenho certeza" e recomendar aos usuários que pesquisem no Bing.
+<|im_end|>
+<|im_start|>user
+O que é GPT-3?
+<|im_end|>
+<|im_start|>assistant
+
+-------------------------------------------------------------------------------------------
+
+Na sexta-feira, 3 de fevereiro de 2019, à tarde, às 14h, na ABC Shipping Co., localizada na 13ª Avenida, Applewood, um dos trabalhadores do armazém (John Keegan) escorregou e caiu enquanto carregava um inventário pesado (85 libras). Acredita-se que a principal causa foi a falta de disponibilidade de uma carrinha de mão ou de um carrinho de palete. Em vez de esperar, John tentou carregar a carga sozinho. Uma segunda causa possível foi o estado do EPI de John, especificamente seus sapatos, muito desgastados em alguns pontos.
+Quando John caiu, seus colegas se apressaram em socorrê-lo. Suspeitando de uma fratura, a supervisora da planta (Kathy Pickens) decidiu ligar para o 911. John disse que se sentiu um pouco tonto quando perdeu o equilíbrio e que simplesmente "escorregou com os pés". Ele tentou minimizar o dano à própria carga enquanto caía, o que pode ter causado uma queda mais desajeitada.
+Dois de seus colegas de trabalho disseram que perceberam que ele estava tendo um pouco de dificuldade antes da queda, mas que estavam ocupados com suas próprias tarefas e consideraram que seria descortês "chamar a atenção dele". Consulte as declarações dos testemunhos anexas para obter mais informações.
+John foi transferido para um hospital próximo e foi confirmada uma fratura no pulso. John estará de licença por várias semanas.
+O supervisor está atualmente trabalhando com o responsável pela segurança (Chris Darnell) para avaliar o estado do chão, o número e o estado das carrinhas de mão e dos carrinhos de palete no chão, bem como o estado dos sapatos fornecidos pela empresa com mais de dois anos de antiguidade.
+
+Q: Qual é o nome do trabalhador acidentado?
+Q: Quando o acidente ocorreu?
+Q: Quais são as possíveis causas pelas quais o acidente ocorreu?
+Q: Quem é o responsável pela segurança?
+Q: Alguém ligou para o 911?
+Q: O que John disse sobre o acidente?
+
+-------------------------------------------------------------------------------------------
+
+Com dez indicações a melhor filme do ano, a Academia de Artes e Ciências Cinematográficas dos Estados Unidos entrega neste domingo os Oscars para o melhor do cinema no último ano.
+A 95ª edição dos prêmios de Hollywood começou às 17h00 (00:00 GMT) no Teatro Dolby de Los Angeles, com o apresentador Jimmy Kimmel como mestre de cerimônias.
+Na véspera, o filme americano Everything Everywhere All At Once ("Tudo em todos os lugares ao mesmo tempo") liderava a corrida com 11 indicações, seguido pela irlandesa The Banshees of Inisherin ("Os Espíritos da Ilha" na América Latina ou "Almas em Pena de Inisherin" na Espanha) e a alemã Im Westen nichts Neues ("Sem Novidades na Frente") com 9 cada um.
+A América Latina está presente e à espera com as indicações da cubana Ana de Armas como melhor atriz por sua interpretação de Marilyn Monroe em Blonde ("Rubia") e de "Argentina, 1985" como melhor filme internacional.
+O mexicano Guillermo del Toro abriu a noite com o triunfo de "Pinocho" na categoria de melhor filme de animação.
+
+Por favor faça uma tabela resumindo o texto acima
+
+-------------------------------------------------------------------------------------------
+
+Consultor: Bom dia, em que posso ajudar?
+Cliente: Oi, estou tendo problemas com meu plano pós-pago e gostaria de saber como posso resolver.Conselheiro: Claro. Qual é o problema específico?
+Cliente: Estou recebendo cobranças indevidas e não consigo acessar meu extrato para verificar as contas.Conselheiro: Entendo. Vamos verificar juntos. Primeiro, qual é o seu número de telefone?
+Cliente: É o número (...) 
+Consultor: Ok, agora que tenho o número, preciso que você me forneça algumas informações pessoais para verificar sua identidade. Pode dar-me o seu Bilhete de Identidade?
+Cliente: Claro, o meu Bilhete de Identidade é (...) Orientador: Perfeito. Agora, deixe-me verificar seu extrato para descobrir o que está acontecendo com suas cobranças.
+Cliente: Obrigado.
+Consultor: De nada. Aguarde enquanto eu verifico Orientador: Ok, consegui descobrir o que estava acontecendo. Parece que houve um erro na fatura e as cobranças indevidas foram incluídas. Vou corrigir imediatamente.
+Cliente: Excelente, obrigado!
+Consultor: De nada. Posso ajudar em mais alguma coisa?
+Cliente: Não, acho que está tudo bem. Muito obrigado pela ajuda Orientador: É um prazer. Tenha um bom dia!
+
+Crie um json com os seguintes campos: "reason_call" (breve descrição do motivo do contato), "sentiment" (sentimento do cliente), "resolucao_chamado" (variável binária que indica se o problema do cliente foi resolvido durante o atendimento).
+
+-------------------------------------------------------------------------------------------
+
+Acima é o resultado do OCR de uma nota fiscal. Por favor, extraia as informações mencionadas abaixo, no formato json.
+
+{
+	'nome_paciente':'Nome do paciente',
+	'nome_psicologo':'Nome do psicólogo (emissor da nota fiscal)',
+	'CPF_CNPJ_psicologo':'CPF ou CNPJ do psicólogo (emissor da nota fiscal)',
+	'datas_sessoes':'Datas das sessões no formato de lista de strings',
+	'quantidade_sessoes':'Quantidade de sessões mencionadas na nota fiscal',
+	'valor_sessao':'Valor de uma sessão',
+	'valor_nota_fiscal':'Valor de todas as sessões, valor total da nota fiscal',
+}
+
+json = 
+
+-------------------------------------------------------------------------------------------
+
+Acima é o resultado do OCR de uma fatura que comprova a residência de um usuário. Por favor, extraia as informações mencionadas abaixo, no formato json.
+
+{
+	'data_vencimento_fatura':'Data de vencimento da Fatura',
+	'nome_usuario':'Nome do usuário que vai pagar a fatura',
+	'nome_empresa':'Nome da empresa que está cobrando a fatura',
+	'endereco_usuario':'Endereço do usuário que vai pagar a fatura',
+	'valor_fatura':'Valor total da fatura',
+}
+
+json = 
+
+-------------------------------------------------------------------------------------------
+
+Acima é o resultado da transcrição de um áudio de uma conversa realizada por telemedicina. Por favor, extraia as informações mencionadas abaixo, no formato json.
+
+{
+'id_paciente':'Identificação do paciente',
+'anamnese': 'histórico de sintomas descritos pelo paciente no começo da consulta',
+'hipoteses_diagnosticas': 'hipóteses diagnósticas que ajudem os envolvidos a chegarem a conclusões',
+'diagnosticos_definitivos': 'diagnósticos definitivos para embasar decisões, tratamentos e receitas de medicações',
+'tratamentos_efetuados': 'tratamentos realizados pelos paciente'
+}
+
+-------------------------------------------------------------------------------------------

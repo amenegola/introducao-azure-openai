@@ -1,0 +1,7 @@
+azure-search-documents==11.4.0b6
+azure-identity
+langchain==0.0.248
+openai==0.27.8
+python-dotenv==1.0.0
+uvicorn==0.23.2
+fastapi==0.100.1
