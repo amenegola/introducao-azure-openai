@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+langchain
+pydantic
+python-dotenv
+openai==0.27.8
